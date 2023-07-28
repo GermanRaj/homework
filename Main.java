@@ -1,23 +1,19 @@
-
-
+import java.util.Random;
 public class Main {
-    public static void main(String[] args) {
-        int intNumber = 10000;
-        byte byteNumber = 20;
-        double double_number = 3225525.33;
-        float floatNumber = 532252.25F;
+   public static void main(String...args){
+       Calculator calc = new Calculator();
 
-        int extensionOfByteToInt = byteNumber;
-        System.out.println("Extension byte to int " +extensionOfByteToInt);
+       int sumOfTwoNumbers = calc.addMethod();
+       int substractOftwoNumbers = calc.substractMethod();
+       int multiplyOftwoNumbers = calc.multiplyMethod();
+       int divideOftwoNumbers = calc.divideMethod();
 
-        byte constrictionIntToByte = (byte)intNumber;
-        System.out.println("Constriction int to byte " +constrictionIntToByte);
+       System.out.println("Summ of two numbers " +sumOfTwoNumbers);
+       System.out.println("Substraction of two numbers " +substractOftwoNumbers);
+       System.out.println("Multiplication of two numbers " +multiplyOftwoNumbers);
+       System.out.println("Divide of two numbers " +divideOftwoNumbers);
 
-        double extensionOfFloatToDouble =floatNumber;
-        System.out.println("Extension float to double " +extensionOfFloatToDouble);
-
-        float constrictionOfDoubletoFloat = (float) double_number;
-        System.out.println("Constriction double to float " +constrictionOfDoubletoFloat);
+      ;
 
 
 
@@ -25,5 +21,9 @@ public class Main {
 
 
 
-    }
+
+
+
+   }
+
 }
