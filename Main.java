@@ -1,29 +1,14 @@
-import java.util.Random;
 public class Main {
-   public static void main(String...args){
-       Calculator calc = new Calculator();
+    public static void main(String...args){
+        WorldState worldState = new WorldState();
 
-       int sumOfTwoNumbers = calc.addMethod();
-       int substractOftwoNumbers = calc.substractMethod();
-       int multiplyOftwoNumbers = calc.multiplyMethod();
-       int divideOftwoNumbers = calc.divideMethod();
+        boolean isworldnegativelygood = worldState.isWorldNegativelyGood();
+        System.out.println("Plohoje li v mire sostojanije ? " + isworldnegativelygood + "  Ne vsjo tak ploho :)");
 
-       System.out.println("Summ of two numbers " +sumOfTwoNumbers);
-       System.out.println("Substraction of two numbers " +substractOftwoNumbers);
-       System.out.println("Multiplication of two numbers " +multiplyOftwoNumbers);
-       System.out.println("Divide of two numbers " +divideOftwoNumbers);
+        boolean isworldpositivelygood = worldState.isWorldPositivelyGood();
+        System.out.println("Horoshee li v mire sostojanije? " + isworldpositivelygood + " No estj svoi minusi");
 
-      ;
+    }
 
-
-
-
-
-
-
-
-
-
-   }
 
 }
